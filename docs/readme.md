@@ -4,7 +4,9 @@
 # Research, Ideas, Next steps/Personal TODO
 ## Additional research
 ### Histograms and Gauss standard distribution theory
-- in POC folder is located script, that generate multiple histogram charts in order to find standard distribution curve (bell-curve) and help with next assumption while finding proffitable trading strategies.
+- in POC folder is located script, that generate multiple histogram charts in order to find standard distribution curve (bell-curve) and help with next assumption while finding proffitable trading strategies. 
+  
+  *All histograms also saved in ```/docs/hisgorams/``` folder*
 - The resulting charts also works with mean, modus and median:
   - Modus bar is highlighted red. This basicly highlight the most probable price in given context.
   - Bars between mean to median are highlighted yellow as well as vertical lines are plotted. This area is usualy used in statistics as it represents 2 ways of finding "midpoint" in data-sample. 
@@ -60,7 +62,7 @@
 - Go over @TODO comments in code.
 - Extend DA vs ID strategies with metrics display like battery strategy (Bug occured when rewriting from POC to system) 
 ### Different approach for DA vs ID strategies
-- Instead of buying each hour, what was pointe4d in simple strat based on average DA vs ID prices, we may use each hour historical probability of price to calculate EV, and trade based on EV, that comparing results with simple approach
+- Instead of buying each hour, what was pointed in simple strat based on average DA vs ID prices, we may use each hour historical probability of price to calculate EV, and trade based on EV, then comparing results with simple approach
 - Manually review all histograms and try to find strategy
   - Strategy maybe waiting for "annomaly values" and trade towards the mean-median or modus area.
 - Make strategy based on markov process results,
