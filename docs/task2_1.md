@@ -7,3 +7,5 @@
 - Wind ID MWh for 2021    113478034.5
 - PV DA MWh for 2021      46094572.75
 - PV ID MWh for 2021      46689891.5
+## Asumption
+- The higher forecasted production may decrease the energy price in given hours. 
