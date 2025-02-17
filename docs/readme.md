@@ -52,6 +52,8 @@
     SSSS: 11.10%
     ...
   ```
+## Additional ideas
+- It would be interesting to review orderbook and volume as well
 ## Next Steps/TODO
 ### Bugfixing/unfinished code
 - Fix the quarterly optimized battery strategy and EQ plots related to it.
@@ -60,7 +62,7 @@
 ### Different approach for DA vs ID strategies
 - Instead of buying each hour, what was pointe4d in simple strat based on average DA vs ID prices, we may use each hour historical probability of price to calculate EV, and trade based on EV, that comparing results with simple approach
 - Manually review all histograms and try to find strategy
-  - Strategy maybe waiting for "annomaly values" and trade towards the mean-median.
+  - Strategy maybe waiting for "annomaly values" and trade towards the mean-median or modus area.
 - Make strategy based on markov process results,
-  - Itendifying currently sequence after 2nd quartel of hour and by applying process of elimination, trading 3rd and 4th hourly quarters in more probable direction
+  - Itendifying curren sequence after 2nd quartel of hour and by applying process of elimination, trading 3rd and 4th hourly quarters in more probable direction
   - Additionaly implement EV as well here.
