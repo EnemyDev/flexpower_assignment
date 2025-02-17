@@ -12,6 +12,7 @@ def backtest_simple_strategy(df, buy_hours):
     
     # Cumulative performance
     df['Cumulative_Profit'] = df['Profit'].cumsum()
+    print(f"\nThe simple strategy, trading 100MWH produced {df['Cumulative_Profit'].values[-1:][0]} profit\n")
     plot_simple_strategy(df)
     return df
     # Plotting the strategy performance
@@ -31,6 +32,7 @@ def backtest_ml_strategy(df, model):
     df['Cumulative_Profit'] = df['Profit'].cumsum()
     #@TODO implement metrics and trades exports.
     metrics = calculate_metrics(df)
+    print(f"\nThe ML strategy, trading 100MWH produced {df['Cumulative_Profit'].values[-1:][0]} profit\n")
     plot_ml_strategy(df)
     return df
     
