@@ -16,7 +16,8 @@
 ### Markov process
 - again in POC folder is located script apply markov process over quaeters of hour, looking for probabilities of specific sequence of quartels directions forming hour
 - This approach can be used with **"process of elimination"** to predict probabilities of 3rd or 4th quarter of hour.
-  - Example result:
+  - Advanced combination filtering of dataset based on month, day of week, and current hour should be implemented before looking for strategy
+  - Example of simple result:
   ```
   Probabilities for transitions from B:
     B -> B: 42.68%
@@ -65,6 +66,6 @@
 - Instead of buying each hour, what was pointed in simple strat based on average DA vs ID prices, we may use each hour historical probability of price to calculate EV, and trade based on EV, then comparing results with simple approach
 - Manually review all histograms and try to find strategy
   - Strategy maybe waiting for "annomaly values" and trade towards the mean-median or modus area.
-- Make strategy based on markov process results,
+- Implement additional filters and make strategy based on markov process results,
   - Itendifying curren sequence after 2nd quartel of hour and by applying process of elimination, trading 3rd and 4th hourly quarters in more probable direction
   - Additionaly implement EV as well here.
