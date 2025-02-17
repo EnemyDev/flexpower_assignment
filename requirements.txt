@@ -1,0 +1,6 @@
+pandas
+aiohttp
+matplotlib
+scikit-learn
+seaborn
+statsmodels
