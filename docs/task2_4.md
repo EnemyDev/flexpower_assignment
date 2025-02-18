@@ -8,4 +8,4 @@
     - Date:       2021-11-16
     - Total Renewable MWh:        59199.25
     - DayAheadPriceHourlyEURMWh:  237.465
-- This example outlines the importantce of renewable power production in order to "stabilize" rice, and beeing able to provide power on "affordable/lower" cost
+- This example outlines the importantce of renewable power production in order to "stabilize" price, and beeing able to provide power on "affordable/lower" cost
