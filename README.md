@@ -2,7 +2,8 @@
 This repository contains the "Initial Research and Proof of Concept" for the FlexPower assignment from the link [Assignment](https://github.com/FlexPwr/QuantChallenge)
 
 ## Overview
-
+### Exlanation docs
+- Please find my explanation for each tasts, along with some research results in ```docs``` folder
 ### Tech Stack and Library Choices
 
 **Python3**: 
@@ -32,7 +33,7 @@ This selection of libraries provides an basic environment for data processing, a
 Repository containes 3 main folders
   - **data** folder holds data provided in assignment in *raw* sublfolder, while *processed* subfolder holds data generated whem rummimg code.
   - **src** folder holds solution code, as python module.
-  - **docs** folder holds PDF with my explanation, and "fabulations"
+  - **docs** folder holds MD files with my explanation, and "fabulations"
 
 ## Running solution
 In order to run the solution please execute ```python -m src.main``` from virtual-environment after installing all required modules from requirements.txt (```pip install -r requirements.txt```)
