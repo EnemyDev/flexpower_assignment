@@ -12,7 +12,9 @@
 ## Results
 ### Simple approach
 - After running, we can see the strategy did basicly kept buying on DayAhead and selling on IntraDay 100MWH and resulted in 4055652.0
+![Simple strategy EQ curve](https://github.com/EnemyDev/flexpower_assignment/blob/main/docs/da_id/DA_ID_Simple.png?raw=true)
 ### ML aproach
 - The ML strategy did result in 1801790.0 profit for half-year period. The larger datasaet, may allow to optimize for seasonalities, what may allow us to elaborate on this model further
+![Simple strategy EQ curve](https://github.com/EnemyDev/flexpower_assignment/blob/main/docs/da_id/DA_ID_ML.png?raw=true)
 - As we do see nice runups in EQ curve, but also strong dip-downs, we may implement "risk-profile" for position sizing. 
 - Overal results of this strategy are possitive but not overperorming simple approach, therefor it needs to be investigated further.

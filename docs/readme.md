@@ -110,5 +110,5 @@
 - Manually review all histograms and try to find strategy
   - Strategy maybe waiting for "annomaly values" and trade towards the mean-median or modus area.
 - Implement additional filters and make strategy based on markov process results,
-  - Itendifying curren sequence after 2nd quartel of hour and by applying process of elimination, trading 3rd and 4th hourly quarters in more probable direction
+  - Itendifying current sequence after 2nd quartel of hour and by applying process of elimination, trading 3rd and 4th hourly quarters in more probable direction
   - Additionaly implement EV as well here.
