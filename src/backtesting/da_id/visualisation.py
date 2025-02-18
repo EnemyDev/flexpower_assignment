@@ -17,3 +17,14 @@ def plot_ml_strategy(df):
     plt.ylabel('Cumulative Profit (EUR)')
     plt.grid(True)
     plt.show()
+
+def plot_combined_strategy(sdf,mldf):
+    plt.figure(figsize=(15, 7))
+    plt.plot(sdf['Datetime'].dt.date, sdf['Cumulative_Profit'])
+    plt.plot(mldf['Datetime'].dt.date, mldf['Cumulative_Profit'])
+    plt.title('Strategies Performance comparism')
+    plt.xlabel('Date')
+    plt.ylabel('Cumulative Profit simple strategy (EUR)')
+    plt.legend()
+    plt.grid(True)
+    plt.show()

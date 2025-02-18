@@ -37,6 +37,6 @@ Repository containes 3 main folders
 
 ## Running solution
 In order to run the solution please execute ```python -m src.main``` from virtual-environment after installing all required modules from requirements.txt (```pip install -r requirements.txt```)
-- The sollution will fullfill tasks except the last one and task 1.3
+- The sollution will fullfill tasks except the task 1.3
 - Executing will provide both, printed results in terminal as well as generated interactive charts an files(csv and png)
 - In order to run webserver solving task 1.3, please execute ```python -m src.server.main```

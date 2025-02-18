@@ -18,3 +18,5 @@
 ![Simple strategy EQ curve](https://github.com/EnemyDev/flexpower_assignment/blob/main/docs/da_id/DA_ID_ML.png?raw=true)
 - As we do see nice runups in EQ curve, but also strong dip-downs, we may implement "risk-profile" for position sizing. 
 - Overal results of this strategy are possitive but not overperorming simple approach, therefor it needs to be investigated further.
+![Simple vs ML EQ curve](https://github.com/EnemyDev/flexpower_assignment/blob/main/docs/da_id/simple_vs_ml.png?raw=true)
+- Interresting on comparisn chart is, that the ML strategy avoided strong digdown during october, but did not score same runup in november. It can point the seasonal tendencies of both strategies, and may be considered in risk profiling (position sizing)
