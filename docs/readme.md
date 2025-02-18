@@ -36,7 +36,8 @@
     ![December price](https://github.com/EnemyDev/flexpower_assignment/blob/main/docs/histograms/IntradayPriceHourly_Month_December.png?raw=true)
     - On December chart, we cannot observer clean distribution pattern
     - The mean and median values are lacated at peak of the chart
-    -  The distance of mean/median from mode, as well as size of Gauss stdiv favoring more volatility in pricing of energy during December
+    -  **The distance of mean/median from mode, as well as size of Gauss stdiv favoring more volatility in pricing of energy during December.** 
+    -  **The absence of standard distribution patter pointing to less predictable pricing in December**
   - **Comparism of theese 2 charts confirms seasonality in markets. There can be multiple explanations**
     - PV Production during winter are much lower then during summer periods
       - Many obvious and scientific reasons (sunrise-sunset period, temperature for effectivity of solar panels, snow on solar panels, etc.)
@@ -45,10 +46,11 @@
       - More "light" hours due to smaller sunrise sunset period
       - *Overall more "indoor" orientated activites*
 ## Markov process
-- again in POC folder is located script apply markov process over quaeters of hour, looking for probabilities of specific sequence of quartels directions forming hour
+- In POC folder is located script that applies markov process over quartels of hour, looking for probabilities of specific sequence of quartels directions forming hour
 - This approach can be used with **"process of elimination"** to predict probabilities of 3rd or 4th quarter of hour.
   - Advanced combination filtering of dataset based on month, day of week, and current hour should be implemented before looking for strategy
-  - Example of simple result:
+  - ### Example of simple result:
+    *S represent move down in price, B represent move higher in price during hourly quartel, N represents no move in price*
   ```
   Probabilities for transitions from B:
     B -> B: 42.68%
@@ -86,6 +88,16 @@
     SSSS: 11.10%
     ...
   ```
+    ### Example of applying process of elimintation:
+    - We look for sequence of first 3 hourly quartels with highest spread in probabilities for last quartel. that will also favor B->S transition (B -> S: 57.31%) 
+      ```
+      BBBB: 7.77%
+      BBBS: 10.44%
+    - Based on theese probabilities, we can deduct:
+        - p = 10.44/(10.44+7.77) 
+        - Its 57.33% chance, that last hourly quartel will move price lower if specific sequence formed, what alligns with overal chance of B->S transition of 57.31%
+    - **We may apply advanced filtering, for currently daily context if looking for trading this narrative**
+    - 
 # Additional ideas
 - It would be interesting to review orderbook and volume as well
 # Next Steps/TODO
