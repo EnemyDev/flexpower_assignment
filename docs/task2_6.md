@@ -6,6 +6,12 @@
 - Seasonal aproach 
   - The results of first 9 combinations is compared on 3months (quartel) bases, in order to reflect the seasonality. (This feature is currently under debug, as results got broken during refractor from POC) 
 ## Results 
+### Visualisation
+- Using DayAhead price
+    ![DayAhead price](https://github.com/EnemyDev/flexpower_assignment/blob/main/docs/battery/9_best_times_DayAheadPriceHourlyEURMWh_eq.png?raw=true)
+- Using IntraDay price
+    ![IntraDay price](https://github.com/EnemyDev/flexpower_assignment/blob/main/docs/battery/9_best_times_IntradayPriceHourlyEURMWh_eq.png?raw=true)
+### Text summary
 - *The results for second approach was generated with POC code*
 ```
 Strategy (DayAheadPriceHourlyEURMWh): Charge 3:00 - Discharge 19:00
